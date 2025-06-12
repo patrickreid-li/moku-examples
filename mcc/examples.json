@@ -1,0 +1,412 @@
+{
+  "$schema": "./examples.schema.json",
+  "examples": [
+    {
+      "name": "Adder",
+      "description": "Add two inputs and route to an output",
+      "folder": "/Basic/Adder",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "Adder.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "Adder.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clip",
+      "folder": "/Basic/Clip",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "files": [
+            "Clip.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Clock Divider",
+      "folder": "/Basic/ClockDivider",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "mokugo",
+          "folder": "VHDL",
+          "files": [
+            "top.vhd",
+            "ClkDivider.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "mokugo",
+          "folder": "Verilog",
+          "files": [
+            "top.v",
+            "ClkDivider.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DIO",
+      "folder": "/Basic/DIO",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "DIO.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "DIO.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DSP",
+      "folder": "/Basic/DSP",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "files": [
+            "DSP.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Register - Gate",
+      "folder": "/Basic/RegGate",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "RegGate.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "RegGate.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Register - Use",
+      "folder": "/Basic/RegUse",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "RegUse.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "RegUse.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Voltage limiter",
+      "folder": "/Basic/VoltageLimiter",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "files": [
+            "limiter.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arithmetic Unit",
+      "folder": "/Moderate/ArithmeticUnit",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "ArithmeticUnit.vhd",
+            "Top.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "ArithmeticUnit.v",
+            "Top.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Moving Average and Median",
+      "folder": "/Moderate/AverageAndMedian",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "mokugo",
+          "folder": "MokuGo/VHDL",
+          "files": [
+            "MovingAverager.vhd",
+            "MovingMedian.vhd",
+            "Top.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "mokugo",
+          "folder": "MokuGo/Verilog",
+          "files": [
+            "MovingAverager.v",
+            "MovingMedian.v",
+            "Top.v"
+          ]
+        },
+        {
+          "language": "vhdl",
+          "moku": "mokupro",
+          "folder": "MokuPro/VHDL",
+          "files": [
+            "MovingAverager.vhd",
+            "MovingMedian.vhd",
+            "Top.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "mokupro",
+          "folder": "MokuPro/Verilog",
+          "files": [
+            "MovingAverager.v",
+            "MovingMedian.v",
+            "Top.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Scale Offset",
+      "folder": "/Moderate/ScaleOffsetExample",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "files": [
+            "ScaleOffsetExample.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Swept Frequency Pulse",
+      "description": "Generate Swept Frequency Pulse (Chirped Pulse)",
+      "folder": "/Moderate/SweptPulse",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "mokugo",
+          "folder": "MokuGo/VHDL",
+          "files": [
+            "Top.vhd",
+            "PulseMask.vhd"
+          ]
+        },
+        {
+          "language": "vhdl",
+          "moku": "mokupro",
+          "folder": "MokuPro/VHDL",
+          "files": [
+            "Top.vhd",
+            "PulseMask.vhd"
+          ]
+        },
+        {
+          "language": "vhdl",
+          "moku": "moku20",
+          "folder": "MokuLab/VHDL",
+          "files": [
+            "Top.vhd",
+            "PulseMask.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "mokugo",
+          "folder": "MokuGo/Verilog",
+          "files": [
+            "Top.v",
+            "PulseMask.v"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "mokupro",
+          "folder": "MokuPro/Verilog",
+          "files": [
+            "Top.v",
+            "PulseMask.v"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "moku20",
+          "folder": "MokuLab/Verilog",
+          "files": [
+            "Top.v",
+            "PulseMask.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Simple Boxcar Averager",
+      "folder": "/Advanced/BoxcarAverager",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "files": [
+            "BoxcarAverager.vhd",
+            "Top.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DC Sequencer",
+      "folder": "/Advanced/DCSequencer",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "DCSequencer.vhd",
+            "Top.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "DCSequencer.v",
+            "Top.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DLO Actuator Driver",
+      "description": "drive an H-Bridge with PWM and decode position encoders",
+      "folder": "/Advanced/DLOActuatorDriver",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "mokugo",
+          "files": [
+            "DSP.vhd",
+            "PulseGen.vhd",
+            "TicksCounter.vhd",
+            "Top.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Event Counter",
+      "description": "Counts the number of pulses of defined width in a period",
+      "folder": "/Advanced/EventCounter",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "folder": "VHDL",
+          "files": [
+            "EventCounter.vhd",
+            "Top.vhd"
+          ]
+        },
+        {
+          "language": "verilog",
+          "moku": "all",
+          "folder": "Verilog",
+          "files": [
+            "EventCounter.v",
+            "Top.v"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Servo",
+      "folder": "/Advanced/Servo",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "all",
+          "files": [
+            "Counter.vhd",
+            "Top.vhd"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VGA Display",
+      "description": "This example implements a VGA driver, designed for Moku:Go",
+      "folder": "/Advanced/VGA_Display",
+      "platforms": [
+        {
+          "language": "vhdl",
+          "moku": "mokugo",
+          "files": [
+            "DataBlock.vhd",
+            "DisplayBlock.vhd",
+            "FrameBlock.vhd",
+            "Top.vhd"
+          ]
+        }
+      ]
+    }
+  ]
+}

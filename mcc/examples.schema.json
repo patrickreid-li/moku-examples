@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Moku Examples",
+  "description": "A list of examples to be used by Moku Cloud Compile",
+  "type": "object",
+  "properties": {
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "folder": {
+            "type": "string",
+            "description": "The location of the example folder. Should start with a leading '/'"
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "language",
+                "moku",
+                "files"
+              ],
+              "properties": {
+                "language": {
+                  "type": "string",
+                  "enum": [
+                    "vhdl",
+                    "verilog"
+                  ]
+                },
+                "moku": {
+                  "type": "string",
+                  "enum": [
+                    "all",
+                    "mokugo",
+                    "mokupro",
+                    "moku20"
+                  ],
+                  "description": "If this example should target a particular moku. moku20 is Moku:Lab"
+                },
+                "folder": {
+                  "type": "string",
+                  "description": "The folder to import the files from. Do not specify for same as overall example (i.e. single example)"
+                },
+                "files": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "name",
+          "folder",
+          "platforms"
+        ]
+      }
+    }
+  },
+  "required": [
+    "examples"
+  ]
+}
